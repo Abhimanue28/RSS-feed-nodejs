@@ -1,0 +1,24 @@
+DOCTYPE 
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Rss list
+    
+
+body
+  table(width='100%', cellspacing='0', cellpadding='0', border='1', bgcolor='#F2F2F2')
+    thead
+      tr
+        th RSS FEED
+    tbody
+      each val in data
+        tr
+          td #{val.url}
+
+  a(href='http://localhost:9000/sync/') Updates
+                
+
+  
+
+
